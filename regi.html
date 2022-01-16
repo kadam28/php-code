@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    table{
+        background-color:rgb(31, 192, 92);
+        padding: 2px;
+        border: 1px solid black;
+        /* border-collapse: collapse; */
+        margin:24px 2px 2px 4px;
+        color:black;
+        max-width:99%;
+    }
+</style>
+<body style="background-color: bisque;">
+<center>
+    <h1>Student Registration Form</h1>
+    <form name="form1" method="post" action="registration.php">
+    <!-- Name: <input type="text" name="fname"><br>
+    City: <input type="text" name="city"><br><br> -->
+        <table>
+            <tr>
+                <td>Student ID:</td>
+                <td><input type="text" name="sid"></td>
+            </tr>
+            <tr>
+                <td>Student Name:</td>
+                <td><input type="text" name="sname"></td>
+            </tr>
+            <tr>
+                <td>User ID:</td>
+                <td><input type="text" name="userid"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pwd"></td>
+            </tr>
+            <tr>
+                <td>Phone No.:</td>
+                <td><input type="tel" name="phoneno"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>Female<input type="radio" name="gender" value="f">
+                Male <input type="radio" name="gender" value="m"></td>
+            </tr>
+            <tr>
+                <td>Date Of Birth:</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Select Course:</td>
+                <td>
+                    <select name="course">
+                        <option>Web Development</option>
+                        <option>Cloud Computing</option>
+                        <option>Artificial Intelligence</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Address:
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Learning Method Preference</legend>
+                        Online<input type="checkbox" name="LM1" value="online">
+                        Offline<input type="checkbox" name="LM2" value="offline">
+
+
+                    </fieldset>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input type="submit" name="submit" value="submit">
+                <input type="reset" name="reset" value="reset"></td>
+
+            </tr>
+        </table>
+    </form>   
+    </center>
+</body>
+</html>
